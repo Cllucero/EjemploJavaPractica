@@ -1,12 +1,15 @@
 
+//1. Crea una clase Cuenta con los métodos ingreso, reintegro y transferencia. La clase contendrá un constructor por defecto, un constructor con parámetros, un constructor copia y los métodos getters y setters.
 
+//2. Crea una clase Contador con los métodos para incrementar y decrementar el contador. La clase contendrá un constructor por defecto, un constructor con parámetros, un constructor copia y los métodos getters y setters.
+//3. Crea una clase Libro con los métodos préstamo, devolución y toString. La clase contendrá un constructor por defecto, un constructor con parámetros y los métodos getters y setters.
 public class CuentaClienteBanco {
    String CUB;
    String Titular;
-   int Saldo;
+   double Saldo;
    private CuentaClienteBanco Copia;
 
-   public CuentaClienteBanco(String CUB, String Titular, int Saldo) {
+   public CuentaClienteBanco(String CUB, String Titular, double Saldo) {
       CUB = this.CUB;
       Titular = this.Titular;
       Saldo = this.Saldo;
@@ -48,13 +51,13 @@ public void setTitular(String titular) {
 
 
 
-public int getSaldo() {
+public double getSaldo() {
 	return Saldo;
 }
 
 
 
-public void setSaldo(int saldo) {
+public void setSaldo(double saldo) {
 	Saldo = saldo;
 }
 
